@@ -34,12 +34,12 @@
 			controls.update();
 
 			var loader = new THREE.GLTFLoader();
-			var icos;
+			var monkey;
 
 			loader.load( 'models/monkey3.glb', function ( gltf ) {
 
-				icos = gltf;
-				scene.add(icos.scene);
+				monkey = gltf;
+				scene.add(monkey.scene);
 
 				}, undefined, function ( error ) {
 
